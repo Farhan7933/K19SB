@@ -1,0 +1,42 @@
+<!DOCTYPE html
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="back.css">
+    <script>
+        function mobile()
+        {
+        var result=true;
+        var x=document.getElementsByName("paytm")[0].value
+        if(x.length<10)
+            {
+                alert("Enter 10 digit mobile number")
+                result=false;
+            }
+                    if(x.length>10)
+            {
+                alert("Enter 10 digit mobile number")
+                result=false;
+            }
+            if(isNaN(x))
+                {
+                    alert("Enter only numeric value")
+                    result=false;
+                }
+            return(result);
+        }
+    </script>
+</head>
+<body>
+<center>
+<h1>Pay through paytm</h1>
+<form action="done.html" method="post" onsubmit="return mobile()"/>
+<p>Paytm number
+<input type="text" name="paytm" placeholder="enter your paytm number"/>
+</p>
+
+
+<input type="submit" value="Submit"/>
+</form>
+</center>
+</body>
+</html>

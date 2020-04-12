@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="back.css">
+    <script>
+        function validate()
+        {
+            var result=true;
+            var e=document.getElementsByName("email")[0].value;
+            var atindex=e.indexOf('@');
+            var dotindex=e.lastIndexOf('.');
+            if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3)
+                {
+                result=false;
+            alert("Incorrect email id")
+                }
+            return(result);
+        }
+    </script>
+</head>
+<body>
+<h1 style="text-align:center"><img src="images/images (6).jpeg" style="width:500px;height:200px;"></h1>
+
+    <form action="submit.html" method="post" onsubmit="return validate()">
+<table border="2px" cellpadding="4px" align="center" width="300px" height="400px">
+<tr>
+<td>Your Name</td>
+<td><input type="text" name="Username" required></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name="E-mail"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="Password" placeholder="Atleast 6 digit" required></td>
+</tr>
+<tr>
+<td>Re-enter Password</td>
+<td><input type="password" name="Re-enterpassword" placeholder="Atleast 6 digt" required></td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value="Create your THE ROYAL ACCOUNT " href = "project2.html"></td>
+</tr><br/>
+By creating an account, you agree to The Royal Bakery Conditions of Use and Privacy Notice.
+</table>
+    </form>
+</body>
+</html>

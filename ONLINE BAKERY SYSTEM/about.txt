@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <h1>About Us</h1>
+    
+        <pre><p>This company was founded by 4 inspiring entrepreneurs.
+        1. ROCKY SHARAF
+        2. FAHRAN ALAM
+        3. ATUL KUMAR SINGH
+        4. SANDIP GHOSH
+        <img src="images/background.jpeg" alt="logo">
+        This is a THE ROYAL BAKERY.
+        THE FRESH FOOD (MADE WITH LOVE)
+        
+        </p></pre></body>
+</html>

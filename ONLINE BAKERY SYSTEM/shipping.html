@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="back.css">
+    <script>
+        function mobile()
+        {
+        var result=true;
+        var x=document.getElementsByName("Mobile No.")[0].value
+        if(x.length<10)
+            {
+                alert("Enter 10 digit mobile number")
+                result=false;
+            }
+                    if(x.length>10)
+            {
+                alert("Enter 10 digit mobile number")
+                result=false;
+            }
+            if(isNaN(x))
+                {
+                    alert("Enter only numeric value")
+                    result=false;
+                }
+            return(result);
+        }
+    </script>
+</head>
+<body>
+<h1 style="text-align:center">Shipping Details</h1>
+<center>
+<form action="paid.html" method="post" onsubmit="return mobile()"/><br>
+<p>Name:
+<input type="text" name="full name" placeholder="full name" required/></p><br>
+<p>Address:
+<input type="text" name="address" placeholder="include landmark" required/></p><br>
+<p>City:
+    <input type="text" name="City" required/></p>
+<br>    <p>Pin code:
+        <input type="text" name="Pin code" required/></p>
+    <select>
+        <option>India</option>
+        <option>USA</option>
+        <option>Russia</option>
+        <option>Uk</option>
+        <option>China</option>
+        <option>Korea</option>
+        <option>Nepal</option>
+        
+    </select>
+    
+<br><p>Mobile No:
+        <input type="text" name="Mobile No."/></p>
+    <p>Alternate No.:
+        <input type="text" name="Alternate No." /></p>
+    <input type="submit" value="Submit" href="paid.html"/>
+            <input type="reset"/>
+   
+</center>
+ </form> 
+</body>
+</html>

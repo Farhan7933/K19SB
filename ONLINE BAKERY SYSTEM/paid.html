@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="back.css">
+    </head>
+    <body>
+<center>
+    <p style=" font-size:50px"><b>Choose Payment Method<br>
+        <select  onchange="la(this.value)">
+            <option  disabled selected>choose mode of payment </option>
+        <option value="credit.html">Credit Card</option>
+         <option value="credit.html">Debit Card</option>
+            <option value="paytm.html">paytm</option>
+            <option value="cash on delivery.html">cash on delivery</option>
+        </select>
+         <script>
+    function la(src)
+    {
+        window.location=src;
+    }
+</script>
+</center>
+    </body>
+</html>
